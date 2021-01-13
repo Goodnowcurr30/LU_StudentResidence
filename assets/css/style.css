@@ -800,19 +800,36 @@ section {
 }
 
 .male-gender, .female-gender {
+  display: flex;
   float: left;
   margin: 0 10px;
+  flex-direction: row;
 }
 
 .male-gender label {
   float: left;
-  padding: 13px 5px 0 0;
+  padding: 18px 3px 0 0;
+  font-size: 15px;
 }
 
 .female-gender label {
   float: left;
-  padding: 13px 5px 0 0;
+  padding: 18px 3px 0 0;
+  font-size: 15px;
 }
+
+.gender-radio input[type = "radio"]{
+  position: relative;
+  width: 20px;
+  height: 25px;
+  margin: 8px 0 0 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.gender-radio input[type = "radio"]:checked {
+  background: #20b7ff;
+} 
 
 .register .php-email-form {
   width: 100%;
