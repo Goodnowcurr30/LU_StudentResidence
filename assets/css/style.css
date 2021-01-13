@@ -570,7 +570,7 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -657,7 +657,7 @@ section {
 
 .about-us .content h2 {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -666,7 +666,7 @@ section {
 .about-us .content h4 {
   font-weight: 400;
   line-height: 32px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .about-us .about-img-div {
@@ -674,8 +674,8 @@ section {
 }
 
 .about-us .about-img {
-  max-height: 38rem;
-  max-width: 45rem;
+  height: 400px;
+  width: 525px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
