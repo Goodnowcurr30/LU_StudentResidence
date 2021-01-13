@@ -784,6 +784,34 @@ section {
 .register .info-head h1{
   margin: 0 0 0 25%;
   text-align: center;
+  color: rgba(34, 34, 34, 0.747);
+}
+
+.gender-radio {
+  float: left;
+  width: 50%;
+  margin: 7px 0 15px 0;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.male-gender, .female-gender {
+  float: left;
+  margin: 0 10px;
+}
+
+.male-gender label {
+  float: left;
+  padding: 13px 5px 0 0;
+}
+
+.female-gender label {
+  float: left;
+  padding: 13px 5px 0 0;
 }
 
 .register .php-email-form {
