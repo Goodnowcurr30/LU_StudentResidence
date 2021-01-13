@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 #header .logo {
@@ -77,9 +77,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo_title {
   float: right;
-  font-size: 24px;
+  font-size: 20px;
   margin: 0;
-  padding: 5px 5px;
+  padding: 10px 5px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -95,9 +95,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 55px;
-  padding: 5px 0;
+  max-width: 60px;
+  max-height: 60px;
+  padding: 2px 0;
 }
+
+/* ----------- Header Responsive ----------- */
+
+/* Portrait and Landscape */
+@media (max-device-width: 760px) { 
+    #header .logo {
+      font-size: 25px;
+    }
+    #header .logo_title {
+      font-size: 15px;
+      padding: 8px 5px;
+    }
+    #header .logo img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+} 
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -235,17 +253,21 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav {
   position: fixed;
   top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  right: 20px;
+  bottom: 25px;
+  left: 20px;
   z-index: 9999;
   overflow-y: auto;
   background: #fff;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .mobile-nav * {
@@ -387,13 +409,18 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   border-top: 5px solid #1bbd36;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 #hero .carousel-content h2 {
   color: #fff;
   margin-bottom: 20px;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #hero .btn-get-started {
@@ -485,25 +512,29 @@ h1, h2, h3, h4, h5, h6 {
   background: #1bbd36;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   #hero .carousel-content {
-    width: 60%;
+    width: 90%;
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 760px) {
   #hero .carousel-container {
-    top: 58px;
+    top: 60%;
   }
   #hero .carousel-content h2 {
     margin-bottom: 15px;
     font-size: 22px;
   }
   #hero .carousel-content p {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 60px;
+    margin: 2px;
   }
 }
 
