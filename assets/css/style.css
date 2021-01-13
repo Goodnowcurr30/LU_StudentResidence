@@ -404,6 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-content {
   background: rgba(4, 4, 4, 0.7);
+  max-width: 80%;
   padding: 20px;
   color: #fff;
   -webkit-animation-duration: .5s;
@@ -417,10 +418,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-content h2 {
+  text-align: center;
   color: #fff;
   margin-bottom: 20px;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+#hero .carousel-content p {
+  text-align: center;
+  font-size: 13px;
 }
 
 #hero .btn-get-started {
@@ -754,6 +761,143 @@ section {
 .team .member:hover .social {
   opacity: 1;
 }
+
+
+
+/*--------------------------------------------------------------
+# Resgistration
+--------------------------------------------------------------*/
+.register .info-wrap {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.137);
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.register .info-head {
+  background: #fff;
+}
+
+.register .info-head h1{
+  margin: 0 0 0 25%;
+  text-align: center;
+}
+
+.register .php-email-form {
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.137);
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.register .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.register .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.register .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.register .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.register .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.register .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.register .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.register .php-email-form input{
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.register .php-email-form input:focus {
+  border-color: #1bbd36;
+}
+
+.register .php-email-form input {
+  height: 44px;
+}
+
+.register .php-email-form button[type="submit"] {
+  background: #1bbd36;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.register .php-email-form button[type="submit"]:hover {
+  background: #2ae149;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 /*--------------------------------------------------------------

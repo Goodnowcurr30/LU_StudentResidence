@@ -73,46 +73,101 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>About</h2>
+          <h2>Contact</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>About</li>
+            <li>Contact</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
 
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <h2>Eum ipsam laborum deleniti velitena</h2>
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
+    <section id="register" class="register">
+      <div class="container">
+
+        <div class="row justify-content-center" data-aos="fade-up">
+
+          <div class="col-lg-10">
+
+            <div class="info-wrap">
+              <div class="row info-head">
+                <h1>Hall Representatives Registration</h1>
+              </div>
+            </div>
+
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-            </ul>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="First Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Last Name" data-rule="minlen:3" data-msg="Please enter at least 3 chars" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="number" class="form-control" name="level" id="level" placeholder="Your Level" data-rule="minlen:3" data-msg="Please enter at least 3 numbers" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="matric" id="matric" placeholder="Your Matric No" data-rule="minlen:5" data-msg="Please enter your matric no"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="reg" id="reg" placeholder="Your Reg No" data-rule="minlen:5" data-msg="Please enter your reg no"/>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="room-no" id="room-no" placeholder="Your Room No" data-rule="minlen:3" data-msg="Please enter your room no"/>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="hall-name" id="hall-name" placeholder="Your Hall" data-rule="minlen:3" data-msg="Please enter your hall name"/>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="gender" class="male-gender">Male</label>
+                <input type="radio" name="gender" id="gender"/>
+                <label for="gender" class="female-gender">Female</label>
+                <input type="radio" name="gender" id="gender"/>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Register</button></div>
+            </form>
           </div>
+
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
-
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -176,7 +231,6 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
