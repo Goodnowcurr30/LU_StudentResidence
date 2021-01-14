@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-height: 500px) {
   #hero {
-    height: 120vh;
+    height: 100vh;
   }
 }  
 
@@ -577,6 +577,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 375px) {
+  #hero .carousel-item {
+    background-size: cover;
+    background-attachment: none;
+  }
+
   #hero .carousel-container {
     padding: 60px 0 !important;
   }
