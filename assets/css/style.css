@@ -730,6 +730,14 @@ section {
   margin-bottom: 0;
 }
 
+@media (max-width: 1024px) {
+  .about-us .content h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+
+
 @media (max-width: 500px) {
   .section-title h2{
     font-size: 33px;
