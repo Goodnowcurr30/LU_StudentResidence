@@ -410,14 +410,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
-  border-top: 5px solid #1bbd36d7;
-  border-left: 5px solid #1bbd36d7;
-  border-right: 5px solid #1bbd36d7;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-top: 4px solid #1bbd36d7;
+  border-radius: 8px 8px 3px 3px;
+  -webkit-border-radius: 8px 8px 3px 3px;
+  -moz-border-radius: 8px 8px 3px 3px;
+  -ms-border-radius: 8px 8px 3px 3px;
+  -o-border-radius: 8px 8px 3px 3px;
 }
 
 #hero .carousel-content h2 {
@@ -440,18 +438,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 6px;
+  border-radius: 5px;
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #1bbd36;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  border: 1px solid #1bbd36;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 #hero .btn-get-started:hover {
