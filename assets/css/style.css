@@ -673,6 +673,10 @@ section {
   padding: 10px;
 }
 
+.about-us .about-img--subdiv {
+  display: flex;
+}
+
 .about-us .about-img {
   height: 400px;
   width: 525px;
@@ -685,6 +689,27 @@ section {
 
 .about-us .content p:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .section-title h2{
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  .about-us .about-img--subdiv{
+    display: flex;
+    justify-content: center;
+  }
+  .about-us .content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .about-us .content h4 {
+    font-size: 18px;
+
+  }
 }
 
 /*--------------------------------------------------------------
