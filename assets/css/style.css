@@ -525,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
-  }
+ }
 }
 
 @media (max-width: 760px) {
@@ -543,11 +543,47 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px;
     margin: 2px;
   }
+  #hero .btn-get-started {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
 }
 
 @media (max-height: 500px) {
   #hero {
     height: 120vh;
+  }
+}  
+
+@media (max-width: 575.98px) {
+  .carousel-container {
+    padding: 120px 0 0 0 !important;
+  }
+  #hero .carousel-content h2 {
+    font-size: 16px !important;
+  }
+  #hero .carousel-content p {
+    font-size: 11px !important;
+  }
+  #hero .btn-get-started {
+    padding: 8px 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  #hero .carousel-container {
+    padding: 60px 0 !important;
+  }
+  #hero .carousel-content h2 {
+    font-size: 16px !important;
+  }
+  #hero .carousel-content p {
+    font-size: 11px !important;
+  }
+  #hero .btn-get-started {
+    padding: 10px 10px;
+    font-size: 12px;
   }
 }
 
@@ -671,10 +707,13 @@ section {
 
 .about-us .about-img-div {
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-us .about-img--subdiv {
   display: flex;
+  justify-content: center;
 }
 
 .about-us .about-img {
@@ -697,10 +736,11 @@ section {
     font-weight: 500;
   }
 
-  .about-us .about-img--subdiv{
-    display: flex;
-    justify-content: center;
+  .about-us .about-img--subdiv img {
+    max-width: 30rem;
+    max-height: 25rem;
   }
+
   .about-us .content h2 {
     font-size: 30px;
     font-weight: 400;
@@ -793,7 +833,7 @@ section {
 # Resgistration
 --------------------------------------------------------------*/
 .register .info-wrap {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.137);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.247);
   padding: 30px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -803,49 +843,48 @@ section {
 }
 
 .register .info-head {
+  display: flex;
+  justify-content: center;
   background: #fff;
 }
 
 .register .info-head h1{
-  margin: 0 0 0 25%;
+  font-size: 30px;
   text-align: center;
   color: rgba(34, 34, 34, 0.747);
 }
 
 .gender-radio {
-  float: left;
-  width: 50%;
-  margin: 7px 0 15px 0;
-  border: 1px solid rgb(201, 201, 201);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px 0;
 }
 
 .male-gender, .female-gender {
   display: flex;
-  float: left;
-  margin: 0 10px;
+  justify-content: center;
+  margin: 0 15px;
   flex-direction: row;
 }
 
 .male-gender label {
-  float: left;
+  display: flex;
+  justify-self: center;
   padding: 18px 3px 0 0;
   font-size: 15px;
 }
 
 .female-gender label {
-  float: left;
+  display: flex;
+  justify-self: center;
   padding: 18px 3px 0 0;
   font-size: 15px;
 }
 
 .gender-radio input[type = "radio"]{
-  position: relative;
-  width: 20px;
+  display: flex;
+  justify-self: center;
+  width: 18px;
   height: 25px;
   margin: 8px 0 0 4px;
   outline: none;
@@ -858,7 +897,7 @@ section {
 
 .register .php-email-form {
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.137);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.247);
   padding: 30px;
   background: #fff;
   border-radius: 10px;
@@ -948,6 +987,16 @@ section {
 
 .register .php-email-form button[type="submit"]:hover {
   background: #2ae149;
+}
+
+@media (max-width: 500px) {
+  .register .info-head {
+    display: flex;
+    justify-content: center;
+  }
+  .register .info-head h1 {
+    font-size: 25px;
+  }
 }
 
 @-webkit-keyframes animate-loading {
