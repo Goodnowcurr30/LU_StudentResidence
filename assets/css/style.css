@@ -881,43 +881,30 @@ section {
 }
 
 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #111;
-  margin: 0 10px;
-  padding-top: 8px;
-  display: inline-block;
-}
-
-.team .member .social a:hover {
-  color: #1bbd36;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-}
-
-
-@media (max-width: 1200px) {
+@media (max-width: 467px) {
   .team .member {
-    width: 100%;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 767px) {
+  .team .member {
+    width: fit-content;
+    height: 570px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .team .member .member-info h4 span{
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .team .member .member-info p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 8px 0 8px 0;
   }
 }
 
