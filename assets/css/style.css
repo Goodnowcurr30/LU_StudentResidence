@@ -891,7 +891,7 @@ section {
 @media (max-width: 767px) {
   .team .member {
     width: fit-content;
-    height: 570px;
+    height: 550px;
   }
 }
 
