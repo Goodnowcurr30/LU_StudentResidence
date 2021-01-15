@@ -880,14 +880,6 @@ section {
   margin: 8px 0 8px 0;
 }
 
-
-@media (max-width: 467px) {
-  .team .member {
-    width: fit-content;
-    height: fit-content;
-  }
-}
-
 @media (max-width: 767px) {
   .team .member {
     width: fit-content;
