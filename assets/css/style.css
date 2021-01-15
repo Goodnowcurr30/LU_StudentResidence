@@ -915,6 +915,13 @@ section {
 }
 
 
+@media (max-width: 1200px) {
+  .team .member {
+    width: 100%;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Resgistration
