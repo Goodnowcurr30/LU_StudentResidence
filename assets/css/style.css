@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
  }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   #hero .carousel-container {
     top: 60%;
   }
@@ -545,8 +545,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
-    width: 60px;
-    margin: 2px;
+    width: fit-content;
   }
   #hero .btn-get-started {
     padding: 10px 10px;
@@ -554,42 +553,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-height: 500px) {
-  #hero {
-    height: 100vh;
-  }
-}  
 
-@media (max-width: 575.98px) {
-  .carousel-container {
-    padding: 120px 0 0 0 !important;
-  }
-  #hero .carousel-content h2 {
-    font-size: 16px !important;
-  }
-  #hero .carousel-content p {
-    font-size: 11px !important;
-  }
-  #hero .btn-get-started {
-    padding: 8px 8px;
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   #hero .carousel-item {
     background-size: cover;
     background-attachment: none;
   }
 
   #hero .carousel-container {
-    padding: 60px 0 !important;
+    display: flex;
+    justify-self: center;
+    margin-top: 55%;
   }
   #hero .carousel-content h2 {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
   #hero .carousel-content p {
-    font-size: 11px !important;
+    font-size: 10px !important;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: fit-content;
+  }
+  #hero .carousel-control-prev-icon, #hero .carousel-control-next-icon {
+    font-size: 20px;
   }
   #hero .btn-get-started {
     padding: 10px 10px;
@@ -727,8 +713,8 @@ section {
 }
 
 .about-us .about-img {
-  height: 400px;
-  width: 525px;
+  height: auto;
+  width: fit-content;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -880,10 +866,16 @@ section {
   margin: 8px 0 8px 0;
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 360px) {
   .team .member {
     width: fit-content;
-    height: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team .member {
+    width: fit-content;
   }
 }
 
