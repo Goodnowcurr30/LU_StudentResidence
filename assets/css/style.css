@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# General
+# General  #413c3a
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -714,7 +714,7 @@ section {
 
 .about-us .about-img {
   height: auto;
-  width: fit-content;
+  width: 100%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
