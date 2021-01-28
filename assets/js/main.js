@@ -179,12 +179,16 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
+
+  const registers = firebase.firestore();
+
+  const registrationRef = registers.collection('Floor Representative Registration');
   // Reference messages collection
-  var registrationRef = firebase.database().ref('Floor Representative Registration');
+  //var registrationRef = firebase.database().ref('Floor Representative Registration');
 
 
   // Listing for form submit
-  var register = document.getElementById('register-form').addEventListener('submit', submitFormReg);
+  document.getElementById('register-form').addEventListener('submit', submitFormReg);
 
   // Submit Form
   function submitFormReg(e){
@@ -203,21 +207,42 @@
     var female = document.getElementById('female').value;
     
 
-    console.log(fname, lname, male, email);
+    registrationRef.doc().set({
+      fname: fname,
+      lname: lname,
+      email: email,
+      level: level,
+      matric: matric,
+      reg: reg,
+      hall: hall,
+      room: room,
+      male: male,
+      female: female,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    .then(function(){
+      console.log("Data Saved!");
+    })
+    .catch(function(error){
+      console.log(error);
+    });
+
 
     // Save registers
-    saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female);
+    //saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female);
 
     // form Message
     setTimeout(function(){
       swal("Success👍🏼", "You have been registered.", "success");
     }, 2000);
 
-    register.reset();
+    setTimeout(function(){
+      document.getElementById('register-form').reset();
+    }, 1000);
   }
 
   // Save registers to firebase
-  function saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female){
+  /*function saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female){
     var newRegistrationRef = registrationRef.push();
 
     newRegistrationRef.set({
@@ -231,7 +256,7 @@
       room: room,
       male: male,
       female: female
-    }); 
-  }
+    });
+  }*/
 
 })(jQuery);
