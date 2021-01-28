@@ -179,11 +179,12 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-
+  // Firestore initialization
   const registers = firebase.firestore();
 
+  // Reference register collection
   const registrationRef = registers.collection('Floor Representative Registration');
-  // Reference messages collection
+
   //var registrationRef = firebase.database().ref('Floor Representative Registration');
 
 
@@ -206,7 +207,7 @@
     var male = document.getElementById('male').value;
     var female = document.getElementById('female').value;
     
-
+    // Save registers ve
     registrationRef.doc().set({
       fname: fname,
       lname: lname,
