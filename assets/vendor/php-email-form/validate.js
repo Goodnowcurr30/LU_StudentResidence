@@ -1,8 +1,3 @@
-/**
-* PHP Email Form Validation - v2.0
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
 !(function($) {
   "use strict";
 
@@ -136,7 +131,7 @@
         this_form.find("input:not(input[type=submit]), textarea").val('');
       } else {
         this_form.find('.loading').slideUp();
-        if(!msg) {
+        if(! msg) {
           msg = 'Form submission failed and no error message returned from: ' + action + '<br>';
         }
         this_form.find('.error-message').slideDown().html(msg);

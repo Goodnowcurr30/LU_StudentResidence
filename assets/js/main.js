@@ -161,4 +161,77 @@
     aos_init();
   });
 
+
+
+
+   // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJr37cQvS-5adNyqOYJ_5gcaKWvRnCcuM",
+    authDomain: "lmu-residence.firebaseapp.com",
+    projectId: "lmu-residence",
+    storageBucket: "lmu-residence.appspot.com",
+    messagingSenderId: "342708606774",
+    appId: "1:342708606774:web:debbbd60bb56ed789ac597",
+    measurementId: "G-1RVJGVQTRS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  // Reference messages collection
+  var registrationRef = firebase.database().ref('Floor Representative Registration');
+
+
+  // Listing for form submit
+  var register = document.getElementById('register-form').addEventListener('submit', submitFormReg);
+
+  // Submit Form
+  function submitFormReg(e){
+    e.preventDefault();
+
+    // Get values
+    var fname = document.getElementById('f-name').value;
+    var lname = document.getElementById('l-name').value;
+    var email = document.getElementById('email').value;
+    var level = document.getElementById('level').value;
+    var matric = document.getElementById('matric').value;
+    var reg = document.getElementById('reg').value;
+    var hall = document.getElementById('hall-name').value;
+    var room = document.getElementById('room-no').value;
+    var male = document.getElementById('male').value;
+    var female = document.getElementById('female').value;
+    
+
+    console.log(fname, lname, male, email);
+
+    // Save registers
+    saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female);
+
+    // form Message
+    setTimeout(function(){
+      swal("Success👍🏼", "You have been registered.", "success");
+    }, 2000);
+
+    register.reset();
+  }
+
+  // Save registers to firebase
+  function saveRegistration(fname, lname, email, level, matric, reg, hall, room, male, female){
+    var newRegistrationRef = registrationRef.push();
+
+    newRegistrationRef.set({
+      fname: fname,
+      lname: lname,
+      email: email,
+      level: level,
+      matric: matric,
+      reg: reg,
+      hall: hall,
+      room: room,
+      male: male,
+      female: female
+    }); 
+  }
+
 })(jQuery);
