@@ -260,4 +260,18 @@
     });
   }*/
 
+
+  // Adding a reset function to Contact form
+  var contact_form = document.getElementById('contactForm');
+
+  contact_form.addEventListener('submit', submitContactForm);
+
+  function submitContactForm(e){
+    e.preventDefault();
+
+    setTimeout(function(){
+      document.getElementById('contactForm').reset();
+    }, 1000)
+  }
+
 })(jQuery);
